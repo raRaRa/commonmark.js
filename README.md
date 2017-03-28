@@ -100,8 +100,8 @@ properties of a renderer.  So, to make soft breaks render as hard
 breaks in HTML:
 
 ``` js
-var writer = new commonmark.HtmlRenderer;
-writer.softbreak = "<br />";
+var writer = new commonmark.HtmlRenderer();
+writer.options.softbreak = "<br />";
 ```
 
 To make them render as spaces:
